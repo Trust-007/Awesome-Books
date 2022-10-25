@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-You can check out the project using this [live demo link]()
+You can check out the project using this [live demo link](https://trust-007.github.io/Awesome-Books/)
 
 ## Getting Started
 
@@ -43,8 +43,8 @@ You will now be able to check the project with your code editor.
 👤 **Trust**
 
 - GitHub: [@Trust](https://github.com/Trust-007)
-- Twitter: [@Trust]()
-- LinkedIn: [Trust]()
+- Twitter: [@Trust](https://twitter.com/simeontrust7)
+- LinkedIn: [Trust](https://www.linkedin.com/in/trust-simeon)
 
 ## 🤝 Contributing
 
