@@ -18,6 +18,19 @@ const getBookLists = () => {
       book.appendChild(author);
       const remove = document.createElement('button');
       remove.id = item.id;
+      remove.onclick = (e) => {
+        const itemId = e.target.id;
+        const filteredBooks = bookLists.filter((item) => {
+          if (itemId !== item.id && bookLists.length !== 1) {
+            return item;
+          }
+          return '';
+        });
+        bookLists = filteredBooks;
+        localStorage.setItem('books', JSON.stringify(bookLists));
+        return getBookLists();
+      };
+
       remove.innerHTML = 'Remove';
       book.appendChild(remove);
       const line = document.createElement('hr');
