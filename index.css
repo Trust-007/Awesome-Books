@@ -3,14 +3,184 @@
   padding: 0;
 }
 
-main {
-  padding-left: 10px;
+body {
+  color: black;
+  background-color: white;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid black;
+  margin-inline: 3%;
+  margin-block: 15px;
+  padding: 15px;
+}
+
+nav div {
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 20px;
+}
+
+.active {
+  color: cornflowerblue;
+}
+
+.add-new {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-inline: 10px;
+  white-space: nowrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.date {
+  text-align: end;
+  font-size: 20px;
+  padding-inline: 3%;
+  margin-top: 80px;
+}
+
+.single-page {
+  padding: 30px;
+  padding-inline: 10%;
+}
+
+.books-section {
+  margin-top: 25px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.books {
+  margin-block: 40px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.book p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#book-list :nth-of-type(even) {
+  background-color: rgb(241, 232, 232);
+}
+
+button {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-section {
+  padding-top: 20px;
+  display: none;
 }
 
 form {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  align-items: center;
+  margin: 70px auto;
 }
 
-form div {
-  margin-block: 20px;
+input {
+  border: 4px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  width: 95%;
+  padding-block: 10px;
+  padding-inline: 15px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+form button {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  padding-inline: 7px;
+}
+
+.contact {
+  display: none;
+  margin-top: 25px;
+}
+
+.contact div {
+  font-size: 20px;
+  font-weight: 500;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.contact ul {
+  font-size: 20px;
+  font-weight: 500;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.copy-right {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid black;
+  padding: 10px;
+  padding-left: 20px;
+  margin-inline: 3%;
+}
+
+.copy-right div {
+  font-size: 20px;
+  font-weight: 500;
 }
